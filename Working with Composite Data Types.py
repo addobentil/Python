@@ -35,3 +35,12 @@ with open('car_fleet.csv') as csvFile:
         lineCount += 1
 
 print(f'Processed {lineCount} lines.')
+
+print(f'Processed {lineCount} lines.')
+
+currentVehicle = copy.deepcopy(myVehicle)
+for myCarProperties in myInventoryList:
+    for key, value in myCarProperties.items():
+        print("{} : {}".format(key,value))
+        print("-----")
+
